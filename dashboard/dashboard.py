@@ -28,7 +28,7 @@ def create_rfm_df(all_df):
 
   return rfm_df
 
-customer_order_df = pd.read_csv("customer_order_data.csv")
+customer_order_df = pd.read_csv('customer_order_data.csv')
 
 datetime_columns = ["shipping_limit_date",
                     "order_purchase_timestamp",
@@ -37,7 +37,7 @@ datetime_columns = ["shipping_limit_date",
 for column in datetime_columns:
   customer_order_df[column] = pd.to_datetime(customer_order_df[column])
 
-state_df = pd.read_csv("state_data.csv")
+state_df = pd.read_csv('state_data.csv')
 rfm_df = create_rfm_df(customer_order_df)
 
 with st.sidebar:
