@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from streamlit_lottie import st_lottie
 sns.set(style='dark')
 
 st.set_page_config(page_title="E-Commerce Public Dataset Analysis",
@@ -47,15 +48,22 @@ with st.sidebar:
   st.text("Id Dicoding  : ferdyrizz")
 
 with st.container():
-  st.subheader('E-Commerce Pubilc Dataset Analysis')
-  st.title("Hi, I am Ferdy :wave:")
-  st.markdown(
-    """I'm a Computer Science student at Sebelas Maret University.""")
+  left_col, right_col = st.columns(2)
+  
+  with left_col:
+    st.subheader('E-Commerce Pubilc Dataset Analysis')
+    st.title("Hi, I am Ferdy :wave:")
+    st.markdown(
+      """I'm a Computer Science student at Sebelas Maret University.""")
 
-  with st.expander("Learn more"):
-    st.write("[LinkedIn](https://linkedin.com/in/ferdyrizkiawan)")
-    st.write("[Instagram](https://instagram.com/ferdyrizkiawan)")
-    st.write("[GitHub](https://github.com/ferdyraw)")
+    with st.expander("Learn more"):
+      st.write("[LinkedIn](https://linkedin.com/in/ferdyrizkiawan)")
+      st.write("[Instagram](https://instagram.com/ferdyrizkiawan)")
+      st.write("[GitHub](https://github.com/ferdyraw)")
+    
+  with right_col:
+    lottie = "https://lottie.host/e347dd25-e8dc-487f-8cc8-2c823821bcf8/YJdCxFk1kR.json"
+    st_lottie(lottie, height=250)
     
 with st.container():
   st.write("---")
