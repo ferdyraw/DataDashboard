@@ -11,3 +11,8 @@ pip install numpy pandas matplotlib seaborn jupyter streamlit streamlit_lottie
 ```
 streamlit run dashboard.py
 ```
+
+## Dashboard deployment link
+```
+https://ferdy-project-dicoding.streamlit.app/
+```
