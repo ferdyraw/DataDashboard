@@ -13,6 +13,5 @@ streamlit run dashboard.py
 ```
 
 ## Dashboard deployment link
-```
 https://ferdy-project-dicoding.streamlit.app/
-```
+
